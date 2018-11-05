@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MasterDetailPageNavigation.Start">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Black">
+            <Image Source="navigation_logo.png"  Margin="0,40,0,0" />
+            <Entry x:Name="phone"  PlaceholderColor="White"  Placeholder = "Номер телефона" Margin="0,60,0,0" HorizontalTextAlignment="Center" TextColor="White" />
+            <Entry x:Name="password"    PlaceholderColor="White"  Placeholder = "Введите пароль"  HorizontalTextAlignment="Center" TextColor="White"/>
+
+            <Button Text="Далее" Clicked="Button_click1" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" TextColor="White" BackgroundColor="Blue" BorderRadius="50"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

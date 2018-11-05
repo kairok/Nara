@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             x:Class="MasterDetailPageNavigation.Begin">
+    <ContentPage>
+        <ContentPage.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iOS, Android" Value="0,10,0,0" />
+            </OnPlatform>
+        </ContentPage.Padding>
+        <StackLayout>
+            <Label Text="Закажи такси. Цену указываешь сам." FontSize="Large" HorizontalOptions="Center"  HorizontalTextAlignment="Center"/>
+            <Image Source="intro1.png" />
+            <!-- <BoxView Color="Red" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />-->
+        </StackLayout>
+    </ContentPage>
+    <ContentPage>
+        <ContentPage.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iOS, Android" Value="0,10,0,0" />
+            </OnPlatform>
+        </ContentPage.Padding>
+        <StackLayout>
+            <Label Text="Найди трезвого водителя в один клик." FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center" />
+            <Image Source="intro2.png" />
+        </StackLayout>
+    </ContentPage>
+    <ContentPage>
+        <ContentPage.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iOS, Android" Value="0,10,0,0" />
+            </OnPlatform>
+        </ContentPage.Padding>
+        <StackLayout>
+            <Label Text="Доставь то, что тебе надо куда ты захочешь." FontSize="Large" HorizontalOptions="Center"  HorizontalTextAlignment="Center"/>
+            <Image Source="intro3.png" />
+        </StackLayout>
+    </ContentPage>
+    <ContentPage>
+        <ContentPage.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iOS, Android" Value="0,10,0,0" />
+            </OnPlatform>
+        </ContentPage.Padding>
+        <StackLayout>
+            <Label Text="Договор об использовании услуги" FontSize="Large" HorizontalOptions="Center"  FontAttributes="Bold"/>
+            <Label Text="Правила использования мобильным приложением NARA" FontSize="Medium" HorizontalOptions="Center" />
+            <Label Text="Настоящие правила пользования..." FontSize="Medium" HorizontalOptions="Center" />
+
+            <Button Text="Принять" Clicked="Button2" VerticalOptions="EndAndExpand" HorizontalOptions="Center" BorderWidth="2" BorderColor="Black"  BorderRadius="50"  BackgroundColor="White"></Button>
+
+        </StackLayout>
+    </ContentPage>
+</CarouselPage>

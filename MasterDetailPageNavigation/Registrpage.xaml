@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MasterDetailPageNavigation.Registrpage">
+   
+        <StackLayout BackgroundColor="Black">
+            <Label Text="Регистрация" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Large" TextColor="White"/>
+
+            <Entry x:Name="fio"  PlaceholderColor="White"  Placeholder = "Имя пользователя" Margin="0,60,0,0" HorizontalTextAlignment="Center" TextColor="White" />
+            <Entry x:Name="phone"    PlaceholderColor="White"  Placeholder = "Ваш номер телефона"  HorizontalTextAlignment="Center" TextColor="White"/>
+            <Entry x:Name="email"    PlaceholderColor="White"  Placeholder = "Ваш email"  HorizontalTextAlignment="Center" TextColor="White"/>
+
+            <Entry x:Name="password"    PlaceholderColor="White"  Placeholder = "Введите пароль"  HorizontalTextAlignment="Center" TextColor="White"/>
+
+            <Button Text="Далее" Clicked="Button_click1" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" TextColor="White" BackgroundColor="Blue" BorderRadius="50"></Button>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+            <Button Text="Уже есть аккаунт?"  TextColor="White"  BackgroundColor="Black"></Button>
+            <Button Text="Войти"   TextColor="Blue"  BackgroundColor="Black" Clicked="Start_click1"></Button>
+        </StackLayout>
+
+        <!---<FlexLayout Direction="Row"  Wrap="Wrap" JustifyContent="Center">
+           
+                <Button Text="Уже есть аккаунт?"   TextColor="White"  BackgroundColor="Black"></Button>
+                <Button Text="Войти"   TextColor="Blue"  BackgroundColor="Black" Clicked="Start_click1"></Button>
+            </FlexLayout>-->
+
+    </StackLayout>
+  
+</ContentPage>
